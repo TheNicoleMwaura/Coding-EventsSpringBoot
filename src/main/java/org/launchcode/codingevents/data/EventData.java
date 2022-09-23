@@ -13,7 +13,7 @@ public class EventData {
 
    //add an event
     public static void add(Event event){
-        events.put(event.getId(), event);
+        //events.put(event.getId(), event);
     }
     //remove an event
     public static void remove(int id){
