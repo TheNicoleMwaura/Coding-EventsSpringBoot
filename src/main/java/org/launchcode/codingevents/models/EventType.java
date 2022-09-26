@@ -12,6 +12,7 @@ public enum EventType {
 
 
     EventType(String displayName) {
+
         this.displayName = displayName;
     }
 
