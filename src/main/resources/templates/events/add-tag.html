@@ -8,7 +8,7 @@
 
 <form method="post">
     <div class="form-group">
-
+<!--used to keep track of the specific event that we are about to add a tag to.-->
         <input type="hidden"  th:field="${eventTag.event}">
         <select th:field="${eventTag.tag}">
             <option th:each="tag : ${tags}"

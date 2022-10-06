@@ -20,11 +20,7 @@ public class Event extends AbstractEntity {
     @NotBlank(message = "Name is required. ")
     @Size(min = 3, max = 50, message = "Name must be between 3 and 50 characters")
     private String name;
-    /*@Valid
-    * makes sure that an Event object will not be considered valid unless
-    *  it has an EventDetails object that is also valid
-    * (i.e. it has valid description and contactEmail fields).
-    *
+    /*
     *The cascade parameter specifies which ORM operations should cascade
     *cascadeAll specifies that all database operations—including save and delete—should cascade.*/
     @OneToOne(cascade = CascadeType.ALL)  //saves/deletes eventDetails when an event object is created

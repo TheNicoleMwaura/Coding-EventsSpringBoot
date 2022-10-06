@@ -115,7 +115,7 @@ public class EventController {
         model.addAttribute("title", "Add Tag to: " + event.getName());
         model.addAttribute("tags", tagRepository.findAll());
         EventTagDTO eventTag = new EventTagDTO();
-        eventTag.setEvent(event);
+        eventTag.setEvent(event); //it references the specific event when rendering the form, so we can assign the tag to the correct event.
         model.addAttribute("eventTag", eventTag);
         return "events/add-tag.html";
     }
